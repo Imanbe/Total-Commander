@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Total Commander.exe" version="1.0.0.1" publicKeyToken="e64add5c655fcc50" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Total Commander" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Total Commander.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Параметры манифеста UAC
+          Если нужно изменить уровень контроля учетных записей Windows, замените 
+          узел requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+        Если нужно использовать виртуализацию файлов и реестра для обратной
+             совместимости, удалите узел requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.WindowsAPICodePack.dll" size="98304">
+      <assemblyIdentity name="Microsoft.WindowsAPICodePack" version="1.1.2.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gI6W9Z590iEurOBJB50lVF9snD8FJE7JzcU5/aGNNNY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Total Commander.exe" size="215520">
+      <assemblyIdentity name="Total Commander" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>muiYRLgPrhPcVHhnDo/kyTNtwBB3O7oc4yqMbMUyr1Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Total Commander.exe.config" size="1068">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vx2cz7IPFVCJJ4T5tSu5djz0ENdAkZm+NkiKQROzyrM=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LAPTOP-FI4FJ21T\ilnaz" issuerKeyHash="96af289b88694ace9a565defe5327c66440b86c7" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>fx8AmpYh5ZDsCPVtWZV6LD3ctCNZHFihuNCW5yObDSA=</DigestValue></Reference></SignedInfo><SignatureValue>dsB3u7Z5q8NCC/4SnrRFlUHJ+0w/9DaUSqs2UHSQJkuE0/toI6ZkcWzoJpXrRE8XNxGMEDLJfX5jodyPr6gjZz65Ao2inhxp8UexdMn+bphVKVVHabeZbuN/AUg9sIlifkj8quwRD4lQf9jsuIerKtlbsmej1d/fFJ3koxWSWNs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uYT8uwBSIy5SATulWo8nSLY4opjr2eQeMFccltsP2LFv2/8o+UXApP2+lhaVszhU+XfnJikthe8QtmenUb3hI6dLw/UvJKrXupKbOVDGHkQ0ZBuyeoPlz8lUj69STicEAoyhQEfOUI6s2DQkG5GZzRkbtNAyI10ncXn2KZqOr+k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="200d9b23e796d0b8a1581c5923b4dc3d2c7a95596df508ec90e521969a001f7f" Description="" Url=""><as:assemblyIdentity name="Total Commander.exe" version="1.0.0.1" publicKeyToken="e64add5c655fcc50" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-FI4FJ21T\ilnaz</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>3al+qQKINRsEX3ry3MMU65w2Kv7h9OHlmwZFvSu8EFw=</DigestValue></Reference></SignedInfo><SignatureValue>jsjju7KxNd9X5wNFrAgv6PG2TBUOWp5721Ct7U+5SKnIoexzeT6eppeJv0hsXRM8CZNTxIdgs72pId2Mh3Hysf4Hera5y0/1KIlVjk7Cc/XQ32Off6xWaiKf2qektQWUZeWej9Igbm3CkC/uwBQqOttUXXFSaBme7M1ffL1wVZ0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uYT8uwBSIy5SATulWo8nSLY4opjr2eQeMFccltsP2LFv2/8o+UXApP2+lhaVszhU+XfnJikthe8QtmenUb3hI6dLw/UvJKrXupKbOVDGHkQ0ZBuyeoPlz8lUj69STicEAoyhQEfOUI6s2DQkG5GZzRkbtNAyI10ncXn2KZqOr+k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQbwQ1OWcYII9AdvVXFyeZXjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQBGAEkANABGAEoAMgAxAFQAXABpAGwAbgBhAHowHhcNMjMwNTEyMTYyMzA4WhcNMjQwNTExMjIyMzA4WjA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQBGAEkANABGAEoAMgAxAFQAXABpAGwAbgBhAHowgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALmE/LsAUiMuUgE7pVqPJ0i2OKKY69nkHjBXHJbbD9ixb9v/KPlFwKT9vpYWlbM4VPl35yYpLYXvELZnp1G94SOnS8P1LySq17qSmzlQxh5ENGQbsnqD5c/JVI+vUk4nBAKMoUBHzlCOrNg0JBuRmc0ZG7TQMiNdJ3F59imajq/pAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAmNSCGsugN/CuwaKzI+iQ6W0PNQ9H1+wIotRh0/hMebZuW3K+pRBbFyvQ/lLUt4zpI9ffpXduBl1PjdlwOhc8JXmxGsNOl9JdEmh7cspo4PB/2EoWgyeGhnP7b3Z/InnW8T0OJLlRKed5ly8VS9/F5fdAlL3wWQQHnbK/ydKgtKk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
